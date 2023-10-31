@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HexedSceneryMordheimApp.Views.CombatTablesView"
+             xmlns:viewModels="clr-namespace:HexedSceneryMordheimApp.ViewModels">
+    <FlexLayout Direction="Column"
+            AlignItems="Center"
+            JustifyContent="Start">
+        <Picker Title="Select a table" ItemsSource="{Binding Tables}" SelectedItem="{Binding Table}" ItemDisplayBinding="{Binding Name}"/>
+    </FlexLayout>
+
+</ContentPage>

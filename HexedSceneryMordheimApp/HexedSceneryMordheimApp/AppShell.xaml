@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="HexedSceneryMordheimApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HexedSceneryMordheimApp.Views"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="CountExample">
+        <Tab>
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:CountExampleView}"
+                Route="CountExampleView" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Home">
+        <Tab>
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:HomeView}"
+                Route="HomeView" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Misc. Combat Tables">
+        <Tab>
+            <ShellContent
+                Title="Misc. Combat Tables"
+                ContentTemplate="{DataTemplate local:CombatTablesView}"
+                Route="CombatTablesView" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Critical Hits">
+        <Tab>
+            <ShellContent
+                Title="Critical Hits"
+                ContentTemplate="{DataTemplate local:CriticalHitsView}"
+                Route="CriticalHitsView" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Encounters">
+        <Tab>
+            <ShellContent
+                Title="Encounters"
+                ContentTemplate="{DataTemplate local:EncountersView}"
+                Route="EncountersView" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Post-battle Tables">
+        <Tab>
+            <ShellContent
+                Title="Post-battle Tables"
+                ContentTemplate="{DataTemplate local:PostBattleTablesView}"
+                Route="PostBattleTablesView" />
+        </Tab>
+    </FlyoutItem>
+</Shell>
